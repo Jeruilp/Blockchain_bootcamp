@@ -18,6 +18,8 @@ module.exports = {
         // Configuración de la red Ropsten
         ropsten: {
             provider: () => new HDWalletProvider(mnemonic, `https://ropsten.infura.io/v3/${infuraKey}`),
+            // host:"127.0.0.1",
+            // port: 8545,
             network_id: 3,       // Ropsten's id
             gas: 5500000,        // Ropsten has a lower block limit than mainnet
             confirmations: 2,    // # of confs to wait between deployments. (default: 0)

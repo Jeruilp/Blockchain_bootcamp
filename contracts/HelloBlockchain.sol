@@ -17,7 +17,7 @@ contract HelloBlockchain
     event StateChanged(string stateData);
 
     // constructor function
-    constructor(string memory message)
+    constructor(string memory message) 
     {
         RequestMessage = message;
         State = StateType.Request;
@@ -43,6 +43,7 @@ contract HelloBlockchain
         ResponseMessage = responseMessage;
         State = StateType.Respond;
 
+        
         emit StateChanged('Response');
     }
 }
